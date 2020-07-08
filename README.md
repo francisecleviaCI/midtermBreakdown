@@ -44,3 +44,20 @@
    1.  an odd index number and not the same index value of the character in Step 2 or,
    2.  an even index number, not the same index value of the character in Step 2 nor the character located at one index to the left of the character in Step 2
    then character will be added to the new string.
+
+
+### lastIndexOfSpace
+
+1. To find the last index(position) of a ' '(space) in a string, we must loop in the opposite direction of the string(a.k.a. evaluate the string starting from the end and working backwards.)
+2. Starting with that first letter/index(but last letter in the string), if it's value is equal to a ' '(space), return the index. If not, continue on to the next letter/index.
+3. If there are no spaces, return the number -1.
+
+
+### hyphenateName
+1. Create an empty string which will hold our result.
+2. We must find the last ' '(space) of a name so that we know where to place the hyphen.
+3. Using a special method called .lastIndexOf, we will be able to find the last occurrence of a space. 
+4. Starting from the beginning of the string, evaluate each index's value and add it to the new string.
+5. Once you get to the last space in the string, insert a hyphen in its place to the new string. 
+6. Continue evaluating the remaining index letters until the end of the string.
+7. Return/show the new string. 
